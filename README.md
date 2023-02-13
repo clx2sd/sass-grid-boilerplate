@@ -34,7 +34,7 @@ SCSS/jQuery Grid Boilerplate
 ## JS Features
 
 * Prebuilt scripts and integrated libraries include jQuery, Tween.js, Slick Carousel.
-* Preset quality of life / scroll functions such as detecting an element in view, assinging a class when the user has scrolled and so on.
+* Preset quality of life / scroll functions such as detecting an element in view, assigning a class when the user has scrolled and so on.
 * Stripped Underscore.js function throttler.
 * RAF Polyfill.
 * Animated scroll-to functionality.
