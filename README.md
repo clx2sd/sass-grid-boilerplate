@@ -3,6 +3,8 @@
 SCSS/jQuery Grid Boilerplate
 </h1>
 
+<h4><a href="https://projects.chriscarruthers.co.uk/boilerplate/" target="_blank">Demo</a></h4>
+
 <h4>An SCSS starter project boilerplate with device detection, advanced in-built grid system and various other features.</h4>
 
 ## Key Features
