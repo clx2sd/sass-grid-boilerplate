@@ -34,7 +34,6 @@ if ($sanitizeOutput === true) { ob_start("sanitize_output"); } ?>
 <link rel="icon" type="image/png" href="ico/favicon-16.png" sizes="16x16" />
 <link rel="icon" href="ico/android-chrome-192.png" sizes="192x192" />
 
-<?php /* ?>
 <meta property="og:site_name" content="">
 <meta property="og:title" content="">
 <meta property="og:description" content="">
@@ -47,7 +46,6 @@ if ($sanitizeOutput === true) { ob_start("sanitize_output"); } ?>
 <meta name="twitter:image" content="">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image:alt" content="">
-<?php */ ?>
 
 <link rel="stylesheet" href="css/main.min.css">
 
