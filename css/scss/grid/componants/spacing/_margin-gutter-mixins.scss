@@ -1,0 +1,45 @@
+/*
+ *	Create Margin Mixins ( For Gutter Width )
+ * 
+ *  Usage: @include mt-gutter(10) / @include mt-gutter-sm(10)  // Multiple of var(--gutter-width)
+ * 
+ */
+@mixin m-gutter($value) { margin: calc( var(--gutter-width) * #{$value} ) !important } 
+@mixin mt-gutter($value) { margin-top: calc( var(--gutter-width) * #{$value} ) !important }
+@mixin mb-gutter($value) { margin-bottom: calc( var(--gutter-width) * #{$value} ) !important }
+@mixin my-gutter($value) { margin-top: calc( var(--gutter-width) * #{$value} ) !important; margin-bottom: calc( var(--gutter-width) * #{$value} ) !important }
+@mixin ml-gutter($value) { margin-left: calc( var(--gutter-width) * #{$value} ) !important }
+@mixin mr-gutter($value) { margin-right: calc( var(--gutter-width) * #{$value} ) !important }
+@mixin mx-gutter($value) { margin-left: calc( var(--gutter-width) * #{$value} ) !important; margin-right: calc( var(--gutter-width) * #{$value} ) !important }
+
+@mixin m-sm-gutter($value) { @include breakpoint-sm { margin: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mt-sm-gutter($value) { @include breakpoint-sm { margin-top: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mb-sm-gutter($value) { @include breakpoint-sm { margin-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin my-sm-gutter($value) { @include breakpoint-sm { margin-top: calc( var(--gutter-width) * #{$value} ) !important; margin-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin ml-sm-gutter($value) { @include breakpoint-sm { margin-left: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mr-sm-gutter($value) { @include breakpoint-sm { margin-right: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mx-sm-gutter($value) { @include breakpoint-sm { margin-left: calc( var(--gutter-width) * #{$value} ) !important; margin-right: calc( var(--gutter-width) * #{$value} ) !important } }
+
+@mixin m-md-gutter($value) { @include breakpoint-md { margin: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mt-md-gutter($value) { @include breakpoint-md { margin-top: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mb-md-gutter($value) { @include breakpoint-md { margin-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin my-md-gutter($value) { @include breakpoint-md { margin-top: calc( var(--gutter-width) * #{$value} ) !important; margin-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin ml-md-gutter($value) { @include breakpoint-md { margin-left: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mr-md-gutter($value) { @include breakpoint-md { margin-right: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mx-md-gutter($value) { @include breakpoint-md { margin-left: calc( var(--gutter-width) * #{$value} ) !important; margin-right: calc( var(--gutter-width) * #{$value} ) !important } }
+
+@mixin m-lg-gutter($value) { @include breakpoint-lg { margin: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mt-lg-gutter($value) { @include breakpoint-lg { margin-top: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mb-lg-gutter($value) { @include breakpoint-lg { margin-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin my-lg-gutter($value) { @include breakpoint-lg { margin-top: calc( var(--gutter-width) * #{$value} ) !important; margin-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin ml-lg-gutter($value) { @include breakpoint-lg { margin-left: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mr-lg-gutter($value) { @include breakpoint-lg { margin-right: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mx-lg-gutter($value) { @include breakpoint-lg { margin-left: calc( var(--gutter-width) * #{$value} ) !important; margin-right: calc( var(--gutter-width) * #{$value} ) !important } }
+
+@mixin m-xl-gutter($value) { @include breakpoint-xl { margin: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mt-xl-gutter($value) { @include breakpoint-xl { margin-top: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mb-xl-gutter($value) { @include breakpoint-xl { margin-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin my-xl-gutter($value) { @include breakpoint-xl { margin-top: calc( var(--gutter-width) * #{$value} ) !important; margin-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin ml-xl-gutter($value) { @include breakpoint-xl { margin-left: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mr-xl-gutter($value) { @include breakpoint-xl { margin-right: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin mx-xl-gutter($value) { @include breakpoint-xl { margin-left: calc( var(--gutter-width) * #{$value} ) !important; margin-right: calc( var(--gutter-width) * #{$value} ) !important } }

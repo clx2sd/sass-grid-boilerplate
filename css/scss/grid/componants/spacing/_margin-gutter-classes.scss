@@ -1,0 +1,66 @@
+$num: 6; // Number of classes to generate 
+
+@for $i from 0 through $num { 
+
+	.m-gutter-#{$i} { margin: calc( var(--gutter-width) * #{$i} ) !important }
+	.mt-gutter-#{$i} { margin-top: calc( var(--gutter-width) * #{$i} ) !important }
+	.mb-gutter-#{$i} { margin-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+	.my-gutter-#{$i} { margin-top: calc( var(--gutter-width) * #{$i} ) !important; margin-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+	.ml-gutter-#{$i} { margin-left: calc( var(--gutter-width) * #{$i} ) !important }
+	.mr-gutter-#{$i} { margin-right: calc( var(--gutter-width) * #{$i} ) !important }
+	.mx-gutter-#{$i} { margin-left: calc( var(--gutter-width) * #{$i} ) !important; margin-right: calc( var(--gutter-width) * #{$i} ) !important }
+
+}
+
+@include breakpoint-sm { 
+	@for $i from 0 through $num { 
+
+		.m-sm-gutter-#{$i} { margin: calc( var(--gutter-width) * #{$i} ) !important }
+		.mt-sm-gutter-#{$i} { margin-top: calc( var(--gutter-width) * #{$i} ) !important }
+		.mb-sm-gutter-#{$i} { margin-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.my-sm-gutter-#{$i} { margin-top: calc( var(--gutter-width) * #{$i} ) !important; margin-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.ml-sm-gutter-#{$i} { margin-left: calc( var(--gutter-width) * #{$i} ) !important }
+		.mr-sm-gutter-#{$i} { margin-right: calc( var(--gutter-width) * #{$i} ) !important }
+		.mx-sm-gutter-#{$i} { margin-left: calc( var(--gutter-width) * #{$i} ) !important; margin-right: calc( var(--gutter-width) * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-md { 
+	@for $i from 0 through $num { 
+
+		.m-md-gutter-#{$i} { margin: calc( var(--gutter-width) * #{$i} ) !important }
+		.mt-md-gutter-#{$i} { margin-top: calc( var(--gutter-width) * #{$i} ) !important }
+		.mb-md-gutter-#{$i} { margin-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.my-md-gutter-#{$i} { margin-top: calc( var(--gutter-width) * #{$i} ) !important; margin-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.ml-md-gutter-#{$i} { margin-left: calc( var(--gutter-width) * #{$i} ) !important }
+		.mr-md-gutter-#{$i} { margin-right: calc( var(--gutter-width) * #{$i} ) !important }
+		.mx-md-gutter-#{$i} { margin-left: calc( var(--gutter-width) * #{$i} ) !important; margin-right: calc( var(--gutter-width) * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-lg { 
+	@for $i from 0 through $num { 
+
+		.m-lg-gutter-#{$i} { margin: calc( var(--gutter-width) * #{$i} ) !important }
+		.mt-lg-gutter-#{$i} { margin-top: calc( var(--gutter-width) * #{$i} ) !important }
+		.mb-lg-gutter-#{$i} { margin-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.my-lg-gutter-#{$i} { margin-top: calc( var(--gutter-width) * #{$i} ) !important; margin-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.ml-lg-gutter-#{$i} { margin-left: calc( var(--gutter-width) * #{$i} ) !important }
+		.mr-lg-gutter-#{$i} { margin-right: calc( var(--gutter-width) * #{$i} ) !important }
+		.mx-lg-gutter-#{$i} { margin-left: calc( var(--gutter-width) * #{$i} ) !important; margin-right: calc( var(--gutter-width) * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-xl { 
+	@for $i from 0 through $num { 
+
+		.m-xl-gutter-#{$i} { margin: calc( var(--gutter-width) * #{$i} ) !important }
+		.mt-xl-gutter-#{$i} { margin-top: calc( var(--gutter-width) * #{$i} ) !important }
+		.mb-xl-gutter-#{$i} { margin-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.my-xl-gutter-#{$i} { margin-top: calc( var(--gutter-width) * #{$i} ) !important; margin-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.ml-xl-gutter-#{$i} { margin-left: calc( var(--gutter-width) * #{$i} ) !important }
+		.mr-xl-gutter-#{$i} { margin-right: calc( var(--gutter-width) * #{$i} ) !important }
+		.mx-xl-gutter-#{$i} { margin-left: calc( var(--gutter-width) * #{$i} ) !important; margin-right: calc( var(--gutter-width) * #{$i} ) !important }
+
+	}
+}

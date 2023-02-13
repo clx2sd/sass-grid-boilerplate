@@ -1,0 +1,45 @@
+/*
+ *	Create Padding Mixins ( For Gutter Width )
+ * 
+ *  Usage: @include pt-gutter-(10) / @include pt-gutter-sm-(10)  // Multiple of var(--gutter-width)
+ * 
+ */
+@mixin p-gutter($value) { padding: calc( var(--gutter-width) * #{$value} ) !important }
+@mixin pt-gutter($value) { padding-top: calc( var(--gutter-width) * #{$value} ) !important }
+@mixin pb-gutter($value) { padding-bottom: calc( var(--gutter-width) * #{$value} ) !important }
+@mixin py-gutter($value) { padding-top: calc( var(--gutter-width) * #{$value} ) !important; padding-bottom: calc( var(--gutter-width) * #{$value} ) !important }
+@mixin pl-gutter($value) { padding-left: calc( var(--gutter-width) * #{$value} ) !important }
+@mixin pr-gutter($value) { padding-right: calc( var(--gutter-width) * #{$value} ) !important }
+@mixin px-gutter($value) { padding-left: calc( var(--gutter-width) * #{$value} ) !important; padding-right: calc( var(--gutter-width) * #{$value} ) !important }
+
+@mixin p-sm-gutter($value) { @include breakpoint-sm { padding: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pt-sm-gutter($value) { @include breakpoint-sm { padding-top: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pb-sm-gutter($value) { @include breakpoint-sm { padding-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin py-sm-gutter($value) { @include breakpoint-sm { padding-top: calc( var(--gutter-width) * #{$value} ) !important; padding-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pl-sm-gutter($value) { @include breakpoint-sm { padding-left: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pr-sm-gutter($value) { @include breakpoint-sm { padding-right: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin px-sm-gutter($value) { @include breakpoint-sm { padding-left: calc( var(--gutter-width) * #{$value} ) !important; padding-right: calc( var(--gutter-width) * #{$value} ) !important } }
+
+@mixin p-md-gutter($value) { @include breakpoint-md { padding: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pt-md-gutter($value) { @include breakpoint-md { padding-top: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pb-md-gutter($value) { @include breakpoint-md { padding-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin py-md-gutter($value) { @include breakpoint-md { padding-top: calc( var(--gutter-width) * #{$value} ) !important; padding-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pl-md-gutter($value) { @include breakpoint-md { padding-left: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pr-md-gutter($value) { @include breakpoint-md { padding-right: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin px-md-gutter($value) { @include breakpoint-md { padding-left: calc( var(--gutter-width) * #{$value} ) !important; padding-right: calc( var(--gutter-width) * #{$value} ) !important } }
+
+@mixin p-lg-gutter($value) { @include breakpoint-lg { padding: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pt-lg-gutter($value) { @include breakpoint-lg { padding-top: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pb-lg-gutter($value) { @include breakpoint-lg { padding-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin py-lg-gutter($value) { @include breakpoint-lg { padding-top: calc( var(--gutter-width) * #{$value} ) !important; padding-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pl-lg-gutter($value) { @include breakpoint-lg { padding-left: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pr-lg-gutter($value) { @include breakpoint-lg { padding-right: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin px-lg-gutter($value) { @include breakpoint-lg { padding-left: calc( var(--gutter-width) * #{$value} ) !important; padding-right: calc( var(--gutter-width) * #{$value} ) !important } }
+
+@mixin p-xl-gutter($value) { @include breakpoint-xl { padding: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pt-xl-gutter($value) { @include breakpoint-xl { padding-top: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pb-xl-gutter($value) { @include breakpoint-xl { padding-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin py-xl-gutter($value) { @include breakpoint-xl { padding-top: calc( var(--gutter-width) * #{$value} ) !important; padding-bottom: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pl-xl-gutter($value) { @include breakpoint-xl { padding-left: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin pr-xl-gutter($value) { @include breakpoint-xl { padding-right: calc( var(--gutter-width) * #{$value} ) !important } }
+@mixin px-xl-gutter($value) { @include breakpoint-xl { padding-left: calc( var(--gutter-width) * #{$value} ) !important; padding-right: calc( var(--gutter-width) * #{$value} ) !important } }

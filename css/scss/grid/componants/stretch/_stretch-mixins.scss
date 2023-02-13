@@ -1,0 +1,14 @@
+@mixin stretch-right($value) { width: calc( 100% + ( var(--column-width) * #{$value} ) - var(--gutter-width) * (#{$value} / 10) + ( var(--gutter-width) / 8 ) ) }
+@mixin stretch-left($value) { width: calc( 100% + ( var(--column-width) * #{$value} ) - var(--gutter-width) * (#{$value} / 10) + ( var(--gutter-width) / 8 ) ); float: right; }
+
+@mixin stretch-right-sm($value) { @include breakpoint-sm { width: calc( 100% + ( var(--column-width) * #{$value} ) - var(--gutter-width) * (#{$value} / 10) + ( var(--gutter-width) / 8 ) ) } }
+@mixin stretch-left-sm($value) { @include breakpoint-sm { width: calc( 100% + ( var(--column-width) * #{$value} ) - var(--gutter-width) * (#{$value} / 10) + ( var(--gutter-width) / 8 ) ); float: right; } }
+
+@mixin stretch-right-md($value) { @include breakpoint-md { width: calc( 100% + ( var(--column-width) * #{$value} ) - var(--gutter-width) * (#{$value} / 10) + ( var(--gutter-width) / 8 ) ) } }
+@mixin stretch-left-md($value) { @include breakpoint-md { width: calc( 100% + ( var(--column-width) * #{$value} ) - var(--gutter-width) * (#{$value} / 10) + ( var(--gutter-width) / 8 ) ); float: right; } }
+
+@mixin stretch-right-lg($value) { @include breakpoint-lg { width: calc( 100% + ( var(--column-width) * #{$value} ) - var(--gutter-width) * (#{$value} / 10) + ( var(--gutter-width) / 8 ) ) } }
+@mixin stretch-left-lg($value) { @include breakpoint-lg { width: calc( 100% + ( var(--column-width) * #{$value} ) - var(--gutter-width) * (#{$value} / 10) + ( var(--gutter-width) / 8 ) ); float: right; } }
+
+@mixin stretch-right-xl($value) { @include breakpoint-xl { width: calc( 100% + ( var(--column-width) * #{$value} ) - var(--gutter-width) * (#{$value} / 10) + ( var(--gutter-width) / 8 ) ) } }
+@mixin stretch-left-xl($value) { @include breakpoint-xl { width: calc( 100% + ( var(--column-width) * #{$value} ) - var(--gutter-width) * (#{$value} / 10) + ( var(--gutter-width) / 8 ) ); float: right; } }

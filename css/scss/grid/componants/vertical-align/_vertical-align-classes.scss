@@ -1,0 +1,33 @@
+.v-align-top, .v-align-middle, .v-align-bottom, .v-align-sm-top, .v-align-sm-middle, .v-align-sm-bottom, .v-align-md-top, .v-align-md-middle, .v-align-md-bottom, .v-align-lg-top, .v-align-lg-middle, .v-align-lg-bottom, .v-align-xl-top, .v-align-xl-middle, .v-align-xl-bottom {
+	display: flex;
+	flex-direction: column;
+	height: 100%;	
+}
+
+.v-align-top { justify-content: flex-start }
+.v-align-middle { justify-content: center }
+.v-align-bottom { justify-content: flex-end }		
+
+@include breakpoint-sm {
+	.v-align-sm-top { justify-content: flex-start }
+	.v-align-sm-middle { justify-content: center }
+	.v-align-sm-bottom { justify-content: flex-end }
+}
+
+@include breakpoint-md {
+	.v-align-md-top { justify-content: flex-start }
+	.v-align-md-middle { justify-content: center }
+	.v-align-md-bottom { justify-content: flex-end }
+}
+
+@include breakpoint-lg {
+	.v-align-lg-top { justify-content: flex-start }
+	.v-align-lg-middle { justify-content: center }
+	.v-align-lg-bottom { justify-content: flex-end }
+}
+
+@include breakpoint-xl {
+	.v-align-xl-top { justify-content: flex-start }
+	.v-align-xl-middle { justify-content: center }
+	.v-align-xl-bottom { justify-content: flex-end }
+}

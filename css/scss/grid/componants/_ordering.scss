@@ -1,0 +1,28 @@
+/*
+ *	Create Ordering Classes 
+ */
+
+$num: 10; // Number of classes to generate
+
+@for $i from 0 through $num { .order-#{$i} { order: #{$i} } }
+
+@include breakpoint-sm { 
+	@for $i from 0 through $num {
+		.order-sm-#{$i} { order: #{$i} } 
+	}
+}
+@include breakpoint-md { 
+	@for $i from 0 through $num {
+		.order-md-#{$i} { order: #{$i} } 
+	}
+}
+@include breakpoint-lg { 
+	@for $i from 0 through $num {
+		.order-lg-#{$i} { order: #{$i} } 
+	}
+}
+@include breakpoint-xl { 
+	@for $i from 0 through $num {
+		.order-xl-#{$i} { order: #{$i} } 
+	}
+}

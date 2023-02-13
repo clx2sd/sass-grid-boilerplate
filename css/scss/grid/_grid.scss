@@ -1,0 +1,248 @@
+/*
+ *	GRID SETTINGS: Define Breakpoints
+ *  
+ *  NOTE: :root { --continer-width } MUST always be less than or equal to the defined breakpoint value
+ *   
+ */
+$breakpoint-sm: 420px;
+$breakpoint-md: 769px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1800px;
+
+@mixin breakpoint-sm { @media screen and ( min-width: $breakpoint-sm ) { @content } }
+@mixin breakpoint-md { @media screen and ( min-width: $breakpoint-md ) { @content } }
+@mixin breakpoint-lg { @media screen and ( min-width: $breakpoint-lg ) { @content } }
+@mixin breakpoint-xl { @media screen and ( min-width: $breakpoint-xl ) { @content } }
+
+
+/*
+ *  
+ *  GRID SETTINGS: Variable Gutter / Container Padding / Container Widths Per Breakpoint
+ *  
+ *  NOTE: :root { --continer-width } MUST always be less than or equal to the defined breakpoint value
+ *  
+ *  NOTE: With the calculated --column-width variable, it is possible to shift, offset or add margin/padding that scales exactly with the columns
+ *   
+ *  All values, including zero MUST have a unit, eg px or vw
+ *  
+ */
+:root { 
+	--gutter-width: 20px;
+	--container-padding: 30px;
+	--container-width: 100vw;
+
+	// Do not edit
+	--column-width: calc( ( 100vw - ( 100vw - var(--container-width) + ( (-2*var(--gutter-width)) + (2*var(--container-padding)) ) ) ) * 0.083333333333 );
+}
+@include breakpoint-sm {
+	:root { 
+		--gutter-width: 20px;
+		--container-padding: 30px;
+		--container-width: 100vw;
+
+		// Do not edit
+		--column-width: calc( ( 100vw - ( 100vw - var(--container-width) + ( (-2*var(--gutter-width)) + (2*var(--container-padding)) ) ) ) * 0.083333333333 );
+	}
+}
+@include breakpoint-md {
+	:root { 
+		--gutter-width: 20px;
+		--container-padding: 30px;
+		--container-width: 100vw;
+
+		// Do not edit
+		--column-width: calc( ( 100vw - ( 100vw - var(--container-width) + ( (-2*var(--gutter-width)) + (2*var(--container-padding)) ) ) ) * 0.083333333333 );
+	}
+}
+@include breakpoint-lg {
+	:root { 
+		--gutter-width: 20px;
+		--container-padding: 40px;
+		--container-width: 1200px;
+
+		// Do not edit
+		--column-width: calc( ( 100vw - ( 100vw - var(--container-width) + ( (-2*var(--gutter-width)) + (2*var(--container-padding)) ) ) ) * 0.083333333333 );
+	}
+}
+@include breakpoint-xl {
+	:root { 
+		--gutter-width: 20px;
+		--container-padding: 0px;
+		--container-width: 1500px;
+
+		// Do not edit
+		--column-width: calc( ( 100vw - ( 100vw - var(--container-width) + ( (-2*var(--gutter-width)) + (2*var(--container-padding)) ) ) ) * 0.083333333333 );
+
+	}
+}
+
+
+/*
+ *	GRID SETTINGS: Define A Universal Spacer Increment ( use --column-width to make it scale to columns )
+ */
+$spacer: 10px; 
+// $spacer: var(--column-width)/4; // Scale to columns/vw
+// $spacer: var(--gutter-width); // Scale to gutter width
+
+:root { --spacer: $spacer } // Assign to var
+
+
+/*
+ *  Build Grid
+ */
+body {
+	overflow-x: hidden;
+
+	#wrapper {
+		display: block;
+		position: relative;
+		width: 100vw;
+
+		.container {
+			display: block;
+			position: relative;
+
+			// Center Container
+			margin-left: auto;
+			margin-right: auto;
+
+			width: 100vw;
+
+			// Define Container Width
+			max-width: var(--container-width);
+
+			> .container { height: 100% } // Make nested containers fit height
+
+
+			// Enable Container Full Width
+			/* 
+			 *  In order for the columns to respect the container width and 
+			 *  stay uniform, a 'standard' .container must be nested within 
+			 *  a .full-width.container if a full width container is used, 
+			 *  otherwise the columns will stretch to fill full width and 
+			 *  the componant classes will not work.
+			 */
+			&.full-width { 
+				max-width: 100vw !important;
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+
+			.row {
+				display: flex;
+				position: relative;
+				flex-flow: row wrap;
+
+				justify-content: flex-start;
+				align-items: stretch;
+
+				align-content: initial;
+
+				padding: 0 var(--container-padding);
+
+				margin-left: calc( 0px - ( var(--gutter-width) / 2 ) );
+				margin-right: calc( 0px - ( var(--gutter-width) / 2 ) );
+
+				height: 100%;
+
+				// Handle Nested Rows
+				.row {
+					padding-left: 0;
+					padding-right: 0;
+					margin-left: calc( 0px - var(--gutter-width) / 2 );
+					margin-right: calc( 0px - var(--gutter-width) / 2 );			
+
+					align-content: flex-start; // By default vertically align nested content to top
+
+				}
+
+				.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+
+					position: relative;
+
+					flex: 0 0 auto;
+
+					// Add Gutter
+					padding-left: calc( var(--gutter-width) / 2 );
+					padding-right: calc( var(--gutter-width) / 2 );
+
+
+					&:after, > div:after {
+						content: "";
+						display: block;
+						clear: both;
+					}
+				}
+
+				$column_sizes: 
+					8.3333333333%, 
+					16.6666666667%, 
+					25%, 
+					33.3333333333%, 
+					41.6666666667%, 
+					50%, 
+					58.3333333333%, 
+					66.6666666667%, 
+					75%, 
+					83.3333333333%, 
+					91.6666666667%, 
+					100%;
+
+				@each $size in $column_sizes {
+				    $i: index($column_sizes, $size);
+					.col-#{$i} { width: $size }
+				}
+				.offset-0 { margin-left: 0; }
+				@each $size in $column_sizes {
+				    $i: index($column_sizes, $size);
+					.offset-#{$i} { margin-left: $size }
+				}
+				@include breakpoint-sm {	
+					.offset-sm-0 { margin-left: 0; }		
+					@each $size in $column_sizes {
+					    $i: index($column_sizes, $size);
+						.col-sm-#{$i} { width: $size }
+					}
+					@each $size in $column_sizes {
+					    $i: index($column_sizes, $size);
+						.offset-sm-#{$i} { margin-left: $size }
+					}
+				}
+				@include breakpoint-md {		
+					.offset-md-0 { margin-left: 0; }			
+					@each $size in $column_sizes {
+					    $i: index($column_sizes, $size);
+						.col-md-#{$i} { width: $size }
+					}
+					@each $size in $column_sizes {
+					    $i: index($column_sizes, $size);
+						.offset-md-#{$i} { margin-left: $size }
+					}
+				}
+				@include breakpoint-lg {			
+					.offset-lg-0 { margin-left: 0; }		
+					@each $size in $column_sizes {
+					    $i: index($column_sizes, $size);
+						.col-lg-#{$i} { width: $size }
+					}
+					@each $size in $column_sizes {
+					    $i: index($column_sizes, $size);
+						.offset-lg-#{$i} { margin-left: $size }
+					}
+				}
+				@include breakpoint-xl {		
+					.offset-xl-0 { margin-left: 0; }			
+					@each $size in $column_sizes {
+					    $i: index($column_sizes, $size);
+						.col-xl-#{$i} { width: $size }
+					}
+					@each $size in $column_sizes {
+					    $i: index($column_sizes, $size);
+						.offset-xl-#{$i} { margin-left: $size }
+					}
+				}
+
+			}
+		}
+	}
+}

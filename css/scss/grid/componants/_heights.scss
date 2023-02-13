@@ -1,0 +1,40 @@
+/*
+ *	Height Classes
+ */
+
+$num: 10; // Number of classes to generate 
+
+.fill-height { height: 100% }
+
+.h-auto { height: auto !important }
+@for $i from 1 through $num { 
+	.h-#{$i}0 { height: #{$i}0vh !important }
+}
+
+@include breakpoint-sm {
+	.h-sm-auto { height: auto !important }
+	@for $i from 1 through $num { 
+		.h-sm-#{$i}0 { height: #{$i}0vh !important }
+	}
+}
+
+@include breakpoint-md {
+	.h-md-auto { height: auto !important }
+	@for $i from 1 through $num { 
+		.h-md-#{$i}0 { height: #{$i}0vh !important }
+	}
+}
+
+@include breakpoint-lg {
+	.h-lg-auto { height: auto !important }
+	@for $i from 1 through $num { 
+		.h-lg-#{$i}0 { height: #{$i}0vh !important }
+	}
+}
+
+@include breakpoint-xl {
+	.h-xl-auto { height: auto !important }
+	@for $i from 1 through $num { 
+		.h-xl-#{$i}0 { height: #{$i}0vh !important }
+	}
+}

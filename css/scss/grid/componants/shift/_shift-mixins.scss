@@ -1,0 +1,10 @@
+@mixin shift-up($value) { position: relative; top: calc( 0px - ( #{$spacer} * #{$i} ) ); margin-bottom: calc( 0px - ( #{$spacer} * #{$i} ) ) }
+@mixin shift-down($value) { position: relative; top: calc( 0px + ( #{$spacer} * #{$i} ) )  }
+@mixin shift-up-sm($value) { @include breakpoint-sm { position: relative; top: calc( 0px - ( #{$spacer} * #{$i} ) ); margin-bottom: calc( 0px - ( #{$spacer} * #{$i} ) ) } }
+@mixin shift-down-sm($value) { @include breakpoint-sm { position: relative; top: calc( 0px + ( #{$spacer} * #{$i} ) ) } }
+@mixin shift-up-md($value) { @include breakpoint-md { position: relative; top: calc( 0px - ( #{$spacer} * #{$i} ) ); margin-bottom: calc( 0px - ( #{$spacer} * #{$i} ) ) } }
+@mixin shift-down-md($value) { @include breakpoint-md { position: relative; top: calc( 0px + ( #{$spacer} * #{$i} ) ) } }
+@mixin shift-up-lg($value) { @include breakpoint-lg { position: relative; top: calc( 0px - ( #{$spacer} * #{$i} ) ); margin-bottom: calc( 0px - ( #{$spacer} * #{$i} ) ) } }
+@mixin shift-down-lg($value) { @include breakpoint-lg { position: relative; top: calc( 0px + ( #{$spacer} * #{$i} ) ) } }
+@mixin shift-up-xl($value) { @include breakpoint-xl { position: relative; top: calc( 0px - ( #{$spacer} * #{$i} ) ); margin-bottom: calc( 0px - ( #{$spacer} * #{$i} ) ) } }
+@mixin shift-down-xl($value) { @include breakpoint-xl { position: relative; top: calc( 0px + ( #{$spacer} * #{$i} ) ) } }

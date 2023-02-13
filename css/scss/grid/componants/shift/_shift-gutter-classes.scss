@@ -1,0 +1,31 @@
+$num: 6; // Number of classes to generate
+
+// Based on var(--gutter-width)
+@for $i from 0 through $num { 
+	.shift-up-gutter-#{$i} { position: relative; top: calc( 0px - ( var(--gutter-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--gutter-width) * #{$i} ) ) } 
+	.shift-down-gutter-#{$i} { position: relative; top: calc( var(--gutter-width) * #{$i} ) } 
+}
+@include breakpoint-sm { 
+	@for $i from 0 through $num { 
+		.shift-up-sm-gutter-#{$i} { position: relative; top: calc( 0px - ( var(--gutter-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--gutter-width) * #{$i} ) ) } 
+		.shift-down-sm-gutter-#{$i} { position: relative; top: calc( var(--gutter-width) * #{$i} ) } 
+	}
+}
+@include breakpoint-md { 
+	@for $i from 0 through $num { 
+		.shift-up-md-gutter-#{$i} { position: relative; top: calc( 0px - ( var(--gutter-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--gutter-width) * #{$i} ) ) } 
+		.shift-down-md-gutter-#{$i} { position: relative; top: calc( var(--gutter-width) * #{$i} ) } 
+	}
+}
+@include breakpoint-lg { 
+	@for $i from 0 through $num { 
+		.shift-up-lg-gutter-#{$i} { position: relative; top: calc( 0px - ( var(--gutter-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--gutter-width) * #{$i} ) ) } 
+		.shift-down-lg-gutter-#{$i} { position: relative; top: calc( var(--gutter-width) * #{$i} ) } 
+	}
+}
+@include breakpoint-xl { 
+	@for $i from 0 through $num { 
+		.shift-up-xl-gutter-#{$i} { position: relative; top: calc( 0px - ( var(--gutter-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--gutter-width) * #{$i} ) ) } 
+		.shift-down-xl-gutter-#{$i} { position: relative; top: calc( var(--gutter-width) * #{$i} ) } 
+	}
+}

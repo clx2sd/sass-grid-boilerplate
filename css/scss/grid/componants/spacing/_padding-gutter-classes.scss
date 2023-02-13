@@ -1,0 +1,66 @@
+$num: 6; // Number of classes to generate 
+
+@for $i from 0 through $num { 
+
+	.p-gutter-#{$i} { padding: calc( var(--gutter-width) * #{$i} ) !important }
+	.pt-gutter-#{$i} { padding-top: calc( var(--gutter-width) * #{$i} ) !important }
+	.pb-gutter-#{$i} { padding-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+	.py-gutter-#{$i} { padding-top: calc( var(--gutter-width) * #{$i} ) !important; padding-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+	.pl-gutter-#{$i} { padding-left: calc( var(--gutter-width) * #{$i} ) !important }
+	.pr-gutter-#{$i} { padding-right: calc( var(--gutter-width) * #{$i} ) !important }
+	.px-gutter-#{$i} { padding-left: calc( var(--gutter-width) * #{$i} ) !important; padding-right: calc( var(--gutter-width) * #{$i} ) !important }
+
+}
+
+@include breakpoint-sm { 
+	@for $i from 0 through $num { 
+
+		.p-sm-gutter-#{$i} { padding: calc( var(--gutter-width) * #{$i} ) !important }
+		.pt-sm-gutter-#{$i} { padding-top: calc( var(--gutter-width) * #{$i} ) !important }
+		.pb-sm-gutter-#{$i} { padding-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.py-sm-gutter-#{$i} { padding-top: calc( var(--gutter-width) * #{$i} ) !important; padding-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.pl-sm-gutter-#{$i} { padding-left: calc( var(--gutter-width) * #{$i} ) !important }
+		.pr-sm-gutter-#{$i} { padding-right: calc( var(--gutter-width) * #{$i} ) !important }
+		.px-sm-gutter-#{$i} { padding-left: calc( var(--gutter-width) * #{$i} ) !important; padding-right: calc( var(--gutter-width) * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-md { 
+	@for $i from 0 through $num { 
+
+		.p-md-gutter-#{$i} { padding: calc( var(--gutter-width) * #{$i} ) !important }
+		.pt-md-gutter-#{$i} { padding-top: calc( var(--gutter-width) * #{$i} ) !important }
+		.pb-md-gutter-#{$i} { padding-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.py-md-gutter-#{$i} { padding-top: calc( var(--gutter-width) * #{$i} ) !important; padding-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.pl-md-gutter-#{$i} { padding-left: calc( var(--gutter-width) * #{$i} ) !important }
+		.pr-md-gutter-#{$i} { padding-right: calc( var(--gutter-width) * #{$i} ) !important }
+		.px-md-gutter-#{$i} { padding-left: calc( var(--gutter-width) * #{$i} ) !important; padding-right: calc( var(--gutter-width) * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-lg { 
+	@for $i from 0 through $num { 
+
+		.p-lg-gutter-#{$i} { padding: calc( var(--gutter-width) * #{$i} ) !important }
+		.pt-lg-gutter-#{$i} { padding-top: calc( var(--gutter-width) * #{$i} ) !important }
+		.pb-lg-gutter-#{$i} { padding-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.py-lg-gutter-#{$i} { padding-top: calc( var(--gutter-width) * #{$i} ) !important; padding-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.pl-lg-gutter-#{$i} { padding-left: calc( var(--gutter-width) * #{$i} ) !important }
+		.pr-lg-gutter-#{$i} { padding-right: calc( var(--gutter-width) * #{$i} ) !important }
+		.px-lg-gutter-#{$i} { padding-left: calc( var(--gutter-width) * #{$i} ) !important; padding-right: calc( var(--gutter-width) * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-xl { 
+	@for $i from 0 through $num { 
+
+		.p-xl-gutter-#{$i} { padding: calc( var(--gutter-width) * #{$i} ) !important }
+		.pt-xl-gutter-#{$i} { padding-top: calc( var(--gutter-width) * #{$i} ) !important }
+		.pb-xl-gutter-#{$i} { padding-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.py-xl-gutter-#{$i} { padding-top: calc( var(--gutter-width) * #{$i} ) !important; padding-bottom: calc( var(--gutter-width) * #{$i} ) !important }
+		.pl-xl-gutter-#{$i} { padding-left: calc( var(--gutter-width) * #{$i} ) !important }
+		.pr-xl-gutter-#{$i} { padding-right: calc( var(--gutter-width) * #{$i} ) !important }
+		.px-xl-gutter-#{$i} { padding-left: calc( var(--gutter-width) * #{$i} ) !important; padding-right: calc( var(--gutter-width) * #{$i} ) !important }
+
+	}
+}

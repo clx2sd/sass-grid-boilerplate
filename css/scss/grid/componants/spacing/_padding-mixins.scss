@@ -1,0 +1,45 @@
+/*
+ *	Create Padding Mixins
+ * 
+ *  Usage: @include pt(10) / @include pt-sm(10)  // Multiple of $spacer
+ * 
+ */
+@mixin p($value) { padding: calc( #{$spacer} * #{$value} ) !important } 
+@mixin pt($value) { padding-top: calc( #{$spacer} * #{$value} ) !important }
+@mixin pb($value) { padding-bottom: calc( #{$spacer} * #{$value} ) !important }
+@mixin py($value) { padding-top: calc( #{$spacer} * #{$value} ) !important; padding-bottom: calc( #{$spacer} * #{$value} ) !important }
+@mixin pl($value) { padding-left: calc( #{$spacer} * #{$value} ) !important }
+@mixin pr($value) { padding-right: calc( #{$spacer} * #{$value} ) !important }
+@mixin px($value) { padding-left: calc( #{$spacer} * #{$value} ) !important; padding-right: calc( #{$spacer} * #{$value} ) !important }
+
+@mixin p-sm($value) { @include breakpoint-sm { padding: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pt-sm($value) { @include breakpoint-sm { padding-top: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pb-sm($value) { @include breakpoint-sm { padding-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin py-sm($value) { @include breakpoint-sm { padding-top: calc( #{$spacer} * #{$value} ) !important; padding-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pl-sm($value) { @include breakpoint-sm { padding-left: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pr-sm($value) { @include breakpoint-sm { padding-right: calc( #{$spacer} * #{$value} ) !important } }
+@mixin px-sm($value) { @include breakpoint-sm { padding-left: calc( #{$spacer} * #{$value} ) !important; padding-right: calc( #{$spacer} * #{$value} ) !important } }
+
+@mixin p-md($value) { @include breakpoint-md { padding: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pt-md($value) { @include breakpoint-md { padding-top: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pb-md($value) { @include breakpoint-md { padding-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin py-md($value) { @include breakpoint-md { padding-top: calc( #{$spacer} * #{$value} ) !important; padding-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pl-md($value) { @include breakpoint-md { padding-left: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pr-md($value) { @include breakpoint-md { padding-right: calc( #{$spacer} * #{$value} ) !important } }
+@mixin px-md($value) { @include breakpoint-md { padding-left: calc( #{$spacer} * #{$value} ) !important; padding-right: calc( #{$spacer} * #{$value} ) !important } }
+
+@mixin p-lg($value) { @include breakpoint-lg { padding: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pt-lg($value) { @include breakpoint-lg { padding-top: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pb-lg($value) { @include breakpoint-lg { padding-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin py-lg($value) { @include breakpoint-lg { padding-top: calc( #{$spacer} * #{$value} ) !important; padding-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pl-lg($value) { @include breakpoint-lg { padding-left: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pr-lg($value) { @include breakpoint-lg { padding-right: calc( #{$spacer} * #{$value} ) !important } }
+@mixin px-lg($value) { @include breakpoint-lg { padding-left: calc( #{$spacer} * #{$value} ) !important; padding-right: calc( #{$spacer} * #{$value} ) !important } }
+
+@mixin p-xl($value) { @include breakpoint-xl { padding: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pt-xl($value) { @include breakpoint-xl { padding-top: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pb-xl($value) { @include breakpoint-xl { padding-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin py-xl($value) { @include breakpoint-xl { padding-top: calc( #{$spacer} * #{$value} ) !important; padding-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pl-xl($value) { @include breakpoint-xl { padding-left: calc( #{$spacer} * #{$value} ) !important } }
+@mixin pr-xl($value) { @include breakpoint-xl { padding-right: calc( #{$spacer} * #{$value} ) !important } }
+@mixin px-xl($value) { @include breakpoint-xl { padding-left: calc( #{$spacer} * #{$value} ) !important; padding-right: calc( #{$spacer} * #{$value} ) !important } }

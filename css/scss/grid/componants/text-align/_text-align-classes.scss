@@ -1,0 +1,27 @@
+.text-align-left { text-align: left }
+.text-align-right { text-align: right }
+.text-align-center { text-align: center }
+
+@include breakpoint-sm {
+	.text-align-sm-left { text-align: left }
+	.text-align-sm-right { text-align: right }
+	.text-align-sm-center { text-align: center }
+}
+
+@include breakpoint-md {
+	.text-align-md-left { text-align: left }
+	.text-align-md-right { text-align: right }
+	.text-align-md-center { text-align: center }
+}
+
+@include breakpoint-lg {
+	.text-align-lg-left { text-align: left }
+	.text-align-lg-right { text-align: right }
+	.text-align-lg-center { text-align: center }
+}
+
+@include breakpoint-xl {
+	.text-align-xl-left { text-align: left }
+	.text-align-xl-right { text-align: right }
+	.text-align-xl-center { text-align: center }
+}

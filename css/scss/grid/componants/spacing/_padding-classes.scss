@@ -1,0 +1,66 @@
+$num: 6; // Number of classes to generate 
+
+@for $i from 0 through $num { 
+
+	.p-#{$i} { padding: calc( #{$spacer} * #{$i} ) !important }
+	.pt-#{$i} { padding-top: calc( #{$spacer} * #{$i} ) !important }
+	.pb-#{$i} { padding-bottom: calc( #{$spacer} * #{$i} ) !important }
+	.py-#{$i} { padding-top: calc( #{$spacer} * #{$i} ) !important; padding-bottom: calc( #{$spacer} * #{$i} ) !important }
+	.pl-#{$i} { padding-left: calc( #{$spacer} * #{$i} ) !important }
+	.pr-#{$i} { padding-right: calc( #{$spacer} * #{$i} ) !important }
+	.px-#{$i} { padding-left: calc( #{$spacer} * #{$i} ) !important; padding-right: calc( #{$spacer} * #{$i} ) !important }
+
+}
+
+@include breakpoint-sm { 
+	@for $i from 0 through $num { 
+
+		.p-sm-#{$i} { padding: calc( #{$spacer} * #{$i} ) !important }
+		.pt-sm-#{$i} { padding-top: calc( #{$spacer} * #{$i} ) !important }
+		.pb-sm-#{$i} { padding-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.py-sm-#{$i} { padding-top: calc( #{$spacer} * #{$i} ) !important; padding-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.pl-sm-#{$i} { padding-left: calc( #{$spacer} * #{$i} ) !important }
+		.pr-sm-#{$i} { padding-right: calc( #{$spacer} * #{$i} ) !important }
+		.px-sm-#{$i} { padding-left: calc( #{$spacer} * #{$i} ) !important; padding-right: calc( #{$spacer} * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-md { 
+	@for $i from 0 through $num { 
+
+		.p-md-#{$i} { padding: calc( #{$spacer} * #{$i} ) !important }
+		.pt-md-#{$i} { padding-top: calc( #{$spacer} * #{$i} ) !important }
+		.pb-md-#{$i} { padding-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.py-md-#{$i} { padding-top: calc( #{$spacer} * #{$i} ) !important; padding-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.pl-md-#{$i} { padding-left: calc( #{$spacer} * #{$i} ) !important }
+		.pr-md-#{$i} { padding-right: calc( #{$spacer} * #{$i} ) !important }
+		.px-md-#{$i} { padding-left: calc( #{$spacer} * #{$i} ) !important; padding-right: calc( #{$spacer} * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-lg { 
+	@for $i from 0 through $num { 
+
+		.p-lg-#{$i} { padding: calc( #{$spacer} * #{$i} ) !important }
+		.pt-lg-#{$i} { padding-top: calc( #{$spacer} * #{$i} ) !important }
+		.pb-lg-#{$i} { padding-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.py-lg-#{$i} { padding-top: calc( #{$spacer} * #{$i} ) !important; padding-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.pl-lg-#{$i} { padding-left: calc( #{$spacer} * #{$i} ) !important }
+		.pr-lg-#{$i} { padding-right: calc( #{$spacer} * #{$i} ) !important }
+		.px-lg-#{$i} { padding-left: calc( #{$spacer} * #{$i} ) !important; padding-right: calc( #{$spacer} * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-xl { 
+	@for $i from 0 through $num { 
+
+		.p-xl-#{$i} { padding: calc( #{$spacer} * #{$i} ) !important }
+		.pt-xl-#{$i} { padding-top: calc( #{$spacer} * #{$i} ) !important }
+		.pb-xl-#{$i} { padding-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.py-xl-#{$i} { padding-top: calc( #{$spacer} * #{$i} ) !important; padding-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.pl-xl-#{$i} { padding-left: calc( #{$spacer} * #{$i} ) !important }
+		.pr-xl-#{$i} { padding-right: calc( #{$spacer} * #{$i} ) !important }
+		.px-xl-#{$i} { padding-left: calc( #{$spacer} * #{$i} ) !important; padding-right: calc( #{$spacer} * #{$i} ) !important }
+
+	}
+}

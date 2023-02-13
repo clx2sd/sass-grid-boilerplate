@@ -1,0 +1,16 @@
+/*
+ *	Shift Content Up or Down up or down ( based on --var(column width) / --var(gutter-width) / $spacer ) 
+ *
+ *  Usage .shift-[up/down]-[breakpoint]-# / .shift-up-md-2 ( $spacer )
+ *  Usage .shift-[up/down]-[breakpoint]-gutter--# / .shift-up-md-2 ( var(--gutter-width) )
+ *  Usage .shift-[up/down]-[breakpoint]-column--# / .shift-up-md-2 ( var(--column-width) )
+ *
+ */
+ 
+@import 'shift/shift-classes';
+@import 'shift/shift-gutter-classes';
+@import 'shift/shift-column-classes';
+
+@import 'shift/shift-mixins';
+@import 'shift/shift-gutter-mixins';
+@import 'shift/shift-column-mixins';

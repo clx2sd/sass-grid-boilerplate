@@ -1,0 +1,66 @@
+$num: 6; // Number of classes to generate 
+
+@for $i from 0 through $num { 
+
+	.m-column-#{$i} { margin: calc( var(--column-width) * #{$i} ) !important }
+	.mt-column-#{$i} { margin-top: calc( var(--column-width) * #{$i} ) !important }
+	.mb-column-#{$i} { margin-bottom: calc( var(--column-width) * #{$i} ) !important }
+	.my-column-#{$i} { margin-top: calc( var(--column-width) * #{$i} ) !important; margin-bottom: calc( var(--column-width) * #{$i} ) !important }
+	.ml-column-#{$i} { margin-left: calc( var(--column-width) * #{$i} ) !important }
+	.mr-column-#{$i} { margin-right: calc( var(--column-width) * #{$i} ) !important }
+	.mx-column-#{$i} { margin-left: calc( var(--column-width) * #{$i} ) !important; margin-right: calc( var(--column-width) * #{$i} ) !important }
+
+}
+
+@include breakpoint-sm { 
+	@for $i from 0 through $num { 
+
+		.m-sm-column-#{$i} { margin: calc( var(--column-width) * #{$i} ) !important }
+		.mt-sm-column-#{$i} { margin-top: calc( var(--column-width) * #{$i} ) !important }
+		.mb-sm-column-#{$i} { margin-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.my-sm-column-#{$i} { margin-top: calc( var(--column-width) * #{$i} ) !important; margin-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.ml-sm-column-#{$i} { margin-left: calc( var(--column-width) * #{$i} ) !important }
+		.mr-sm-column-#{$i} { margin-right: calc( var(--column-width) * #{$i} ) !important }
+		.mx-sm-column-#{$i} { margin-left: calc( var(--column-width) * #{$i} ) !important; margin-right: calc( var(--column-width) * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-md { 
+	@for $i from 0 through $num { 
+
+		.m-md-column-#{$i} { margin: calc( var(--column-width) * #{$i} ) !important }
+		.mt-md-column-#{$i} { margin-top: calc( var(--column-width) * #{$i} ) !important }
+		.mb-md-column-#{$i} { margin-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.my-md-column-#{$i} { margin-top: calc( var(--column-width) * #{$i} ) !important; margin-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.ml-md-column-#{$i} { margin-left: calc( var(--column-width) * #{$i} ) !important }
+		.mr-md-column-#{$i} { margin-right: calc( var(--column-width) * #{$i} ) !important }
+		.mx-md-column-#{$i} { margin-left: calc( var(--column-width) * #{$i} ) !important; margin-right: calc( var(--column-width) * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-lg { 
+	@for $i from 0 through $num { 
+
+		.m-lg-column-#{$i} { margin: calc( var(--column-width) * #{$i} ) !important }
+		.mt-lg-column-#{$i} { margin-top: calc( var(--column-width) * #{$i} ) !important }
+		.mb-lg-column-#{$i} { margin-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.my-lg-column-#{$i} { margin-top: calc( var(--column-width) * #{$i} ) !important; margin-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.ml-lg-column-#{$i} { margin-left: calc( var(--column-width) * #{$i} ) !important }
+		.mr-lg-column-#{$i} { margin-right: calc( var(--column-width) * #{$i} ) !important }
+		.mx-lg-column-#{$i} { margin-left: calc( var(--column-width) * #{$i} ) !important; margin-right: calc( var(--column-width) * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-xl { 
+	@for $i from 0 through $num { 
+
+		.m-xl-column-#{$i} { margin: calc( var(--column-width) * #{$i} ) !important }
+		.mt-xl-column-#{$i} { margin-top: calc( var(--column-width) * #{$i} ) !important }
+		.mb-xl-column-#{$i} { margin-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.my-xl-column-#{$i} { margin-top: calc( var(--column-width) * #{$i} ) !important; margin-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.ml-xl-column-#{$i} { margin-left: calc( var(--column-width) * #{$i} ) !important }
+		.mr-xl-column-#{$i} { margin-right: calc( var(--column-width) * #{$i} ) !important }
+		.mx-xl-column-#{$i} { margin-left: calc( var(--column-width) * #{$i} ) !important; margin-right: calc( var(--column-width) * #{$i} ) !important }
+
+	}
+}

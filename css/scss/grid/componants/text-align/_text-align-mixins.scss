@@ -1,0 +1,15 @@
+@mixin text-align-left { text-align: left }
+@mixin text-align-right { text-align: right }
+@mixin text-align-center { text-align: center }
+@mixin text-align-sm-left { @include breakpoint-sm { text-align: left } }
+@mixin text-align-sm-right { @include breakpoint-sm { text-align: right } }
+@mixin text-align-sm-center { @include breakpoint-sm { text-align: center } }
+@mixin text-align-md-left { @include breakpoint-md { text-align: left } }
+@mixin text-align-md-right { @include breakpoint-md { text-align: right } }
+@mixin text-align-md-center { @include breakpoint-md { text-align: center } }
+@mixin text-align-lg-left { @include breakpoint-lg { text-align: left } }
+@mixin text-align-lg-right { @include breakpoint-lg { text-align: right } }
+@mixin text-align-lg-center { @include breakpoint-lg { text-align: center } }
+@mixin text-align-xl-left { @include breakpoint-xl { text-align: left } }
+@mixin text-align-xl-right { @include breakpoint-xl { text-align: right } }
+@mixin text-align-xl-center { @include breakpoint-xl { text-align: center } }

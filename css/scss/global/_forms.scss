@@ -1,0 +1,28 @@
+/*
+ *	Form Elements
+ */
+input, 
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="submit"],
+textarea,
+select {
+
+}
+
+input[type="submit"] {
+
+}
+
+textarea {
+	resize: none;
+	height: 90px;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;	
+}

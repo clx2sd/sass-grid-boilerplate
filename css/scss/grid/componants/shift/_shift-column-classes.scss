@@ -1,0 +1,31 @@
+$num: 6; // Number of classes to generate
+
+// Based on var(--column-width)
+@for $i from 0 through $num { 
+	.shift-up-column-#{$i} { position: relative; top: calc( 0px - ( var(--column-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--column-width) * #{$i} ) ) }
+	.shift-down-column-#{$i} { position: relative; top: calc( var(--column-width) * #{$i} ) } 
+}
+@include breakpoint-sm { 
+	@for $i from 0 through $num { 
+		.shift-up-sm-column-#{$i} { position: relative; top: calc( 0px - ( var(--column-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--column-width) * #{$i} ) ) } 
+		.shift-down-sm-column-#{$i} { position: relative; top: calc( var(--column-width) * #{$i} ) } 
+	}
+}
+@include breakpoint-md { 
+	@for $i from 0 through $num { 
+		.shift-up-md-column-#{$i} { position: relative; top: calc( 0px - ( var(--column-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--column-width) * #{$i} ) ) } 
+		.shift-down-md-column-#{$i} { position: relative; top: calc( var(--column-width) * #{$i} ) } 
+	}
+}
+@include breakpoint-lg { 
+	@for $i from 0 through $num { 
+		.shift-up-lg-column-#{$i} { position: relative; top: calc( 0px - ( var(--column-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--column-width) * #{$i} ) ) } 
+		.shift-down-lg-column-#{$i} { position: relative; top: calc( var(--column-width) * #{$i} ) } 
+	}
+}
+@include breakpoint-xl { 
+	@for $i from 0 through $num { 
+		.shift-up-xl-column-#{$i} { position: relative; top: calc( 0px - ( var(--column-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--column-width) * #{$i} ) ) } 
+		.shift-down-xl-column-#{$i} { position: relative; top: calc( var(--column-width) * #{$i} ) } 
+	}
+}

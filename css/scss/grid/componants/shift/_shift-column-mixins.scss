@@ -1,0 +1,10 @@
+@mixin shift-up-column($value) { position: relative; top: calc( 0px - ( var(--column-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--column-width) * #{$i} ) ) }
+@mixin shift-down-column($value) { position: relative; top: calc( 0px + ( var(--column-width) * #{$i} ) )  }
+@mixin shift-up-sm-column($value) { @include breakpoint-sm { position: relative; top: calc( 0px - ( var(--column-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--column-width) * #{$i} ) ) } }
+@mixin shift-down-sm-column($value) { @include breakpoint-sm { position: relative; top: calc( 0px + ( var(--column-width) * #{$i} ) ) } }
+@mixin shift-up-md-column($value) { @include breakpoint-md { position: relative; top: calc( 0px - ( var(--column-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--column-width) * #{$i} ) ) } }
+@mixin shift-down-md-column($value) { @include breakpoint-md { position: relative; top: calc( 0px + ( var(--column-width) * #{$i} ) ) } }
+@mixin shift-up-lg-column($value) { @include breakpoint-lg { position: relative; top: calc( 0px - ( var(--column-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--column-width) * #{$i} ) ) } }
+@mixin shift-down-lg-column($value) { @include breakpoint-lg { position: relative; top: calc( 0px + ( var(--column-width) * #{$i} ) ) } }
+@mixin shift-up-xl-column($value) { @include breakpoint-xl { position: relative; top: calc( 0px - ( var(--column-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--column-width) * #{$i} ) ) } }
+@mixin shift-down-xl-column($value) { @include breakpoint-xl { position: relative; top: calc( 0px + ( var(--column-width) * #{$i} ) ) } }

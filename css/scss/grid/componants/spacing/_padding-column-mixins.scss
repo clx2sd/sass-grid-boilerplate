@@ -1,0 +1,42 @@
+/*
+ *	Create Padding Mixins ( For Column )
+ */
+@mixin p-column($value) { padding: calc( var(--column-width) * #{$value} ) !important }
+@mixin pt-column($value) { padding-top: calc( var(--column-width) * #{$value} ) !important }
+@mixin pb-column($value) { padding-bottom: calc( var(--column-width) * #{$value} ) !important }
+@mixin py-column($value) { padding-top: calc( var(--column-width) * #{$value} ) !important; padding-bottom: calc( var(--column-width) * #{$value} ) !important }
+@mixin pl-column($value) { padding-left: calc( var(--column-width) * #{$value} ) !important }
+@mixin pr-column($value) { padding-right: calc( var(--column-width) * #{$value} ) !important }
+@mixin px-column($value) { padding-left: calc( var(--column-width) * #{$value} ) !important; padding-right: calc( var(--column-width) * #{$value} ) !important }
+
+@mixin p-sm-column($value) { @include breakpoint-sm { padding: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pt-sm-column($value) { @include breakpoint-sm { padding-top: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pb-sm-column($value) { @include breakpoint-sm { padding-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin py-sm-column($value) { @include breakpoint-sm { padding-top: calc( var(--column-width) * #{$value} ) !important; padding-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pl-sm-column($value) { @include breakpoint-sm { padding-left: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pr-sm-column($value) { @include breakpoint-sm { padding-right: calc( var(--column-width) * #{$value} ) !important } }
+@mixin px-sm-column($value) { @include breakpoint-sm { padding-left: calc( var(--column-width) * #{$value} ) !important; padding-right: calc( var(--column-width) * #{$value} ) !important } }
+
+@mixin p-md-column($value) { @include breakpoint-md { padding: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pt-md-column($value) { @include breakpoint-md { padding-top: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pb-md-column($value) { @include breakpoint-md { padding-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin py-md-column($value) { @include breakpoint-md { padding-top: calc( var(--column-width) * #{$value} ) !important; padding-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pl-md-column($value) { @include breakpoint-md { padding-left: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pr-md-column($value) { @include breakpoint-md { padding-right: calc( var(--column-width) * #{$value} ) !important } }
+@mixin px-md-column($value) { @include breakpoint-md { padding-left: calc( var(--column-width) * #{$value} ) !important; padding-right: calc( var(--column-width) * #{$value} ) !important } }
+
+@mixin p-lg-column($value) { @include breakpoint-lg { padding: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pt-lg-column($value) { @include breakpoint-lg { padding-top: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pb-lg-column($value) { @include breakpoint-lg { padding-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin py-lg-column($value) { @include breakpoint-lg { padding-top: calc( var(--column-width) * #{$value} ) !important; padding-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pl-lg-column($value) { @include breakpoint-lg { padding-left: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pr-lg-column($value) { @include breakpoint-lg { padding-right: calc( var(--column-width) * #{$value} ) !important } }
+@mixin px-lg-column($value) { @include breakpoint-lg { padding-left: calc( var(--column-width) * #{$value} ) !important; padding-right: calc( var(--column-width) * #{$value} ) !important } }
+
+@mixin p-xl-column($value) { @include breakpoint-xl { padding: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pt-xl-column($value) { @include breakpoint-xl { padding-top: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pb-xl-column($value) { @include breakpoint-xl { padding-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin py-xl-column($value) { @include breakpoint-xl { padding-top: calc( var(--column-width) * #{$value} ) !important; padding-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pl-xl-column($value) { @include breakpoint-xl { padding-left: calc( var(--column-width) * #{$value} ) !important } }
+@mixin pr-xl-column($value) { @include breakpoint-xl { padding-right: calc( var(--column-width) * #{$value} ) !important } }
+@mixin px-xl-column($value) { @include breakpoint-xl { padding-left: calc( var(--column-width) * #{$value} ) !important; padding-right: calc( var(--column-width) * #{$value} ) !important } }

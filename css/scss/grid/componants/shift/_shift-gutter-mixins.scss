@@ -1,0 +1,10 @@
+@mixin shift-up-gutter($value) { position: relative; top: calc( 0px - ( var(--gutter-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--gutter-width) * #{$i} ) ) }
+@mixin shift-down-gutter($value) { position: relative; top: calc( 0px + ( var(--gutter-width) * #{$i} ) )  }
+@mixin shift-up-sm-gutter($value) { @include breakpoint-sm { position: relative; top: calc( 0px - ( var(--gutter-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--gutter-width) * #{$i} ) ) } }
+@mixin shift-down-sm-gutter($value) { @include breakpoint-sm { position: relative; top: calc( 0px + ( var(--gutter-width) * #{$i} ) ) } }
+@mixin shift-up-md-gutter($value) { @include breakpoint-md { position: relative; top: calc( 0px - ( var(--gutter-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--gutter-width) * #{$i} ) ) } }
+@mixin shift-down-md-gutter($value) { @include breakpoint-md { position: relative; top: calc( 0px + ( var(--gutter-width) * #{$i} ) ) } }
+@mixin shift-up-lg-gutter($value) { @include breakpoint-lg { position: relative; top: calc( 0px - ( var(--gutter-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--gutter-width) * #{$i} ) ) } }
+@mixin shift-down-lg-gutter($value) { @include breakpoint-lg { position: relative; top: calc( 0px + ( var(--gutter-width) * #{$i} ) ) } }
+@mixin shift-up-xl-gutter($value) { @include breakpoint-xl { position: relative; top: calc( 0px - ( var(--gutter-width) * #{$i} ) ); margin-bottom: calc( 0px - ( var(--gutter-width) * #{$i} ) ) } }
+@mixin shift-down-xl-gutter($value) { @include breakpoint-xl { position: relative; top: calc( 0px + ( var(--gutter-width) * #{$i} ) ) } }

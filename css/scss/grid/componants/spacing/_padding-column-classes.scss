@@ -1,0 +1,66 @@
+$num: 6; // Number of classes to generate 
+
+@for $i from 0 through $num { 
+
+	.p-column-#{$i} { padding: calc( var(--column-width) * #{$i} ) !important }
+	.pt-column-#{$i} { padding-top: calc( var(--column-width) * #{$i} ) !important }
+	.pb-column-#{$i} { padding-bottom: calc( var(--column-width) * #{$i} ) !important }
+	.py-column-#{$i} { padding-top: calc( var(--column-width) * #{$i} ) !important; padding-bottom: calc( var(--column-width) * #{$i} ) !important }
+	.pl-column-#{$i} { padding-left: calc( var(--column-width) * #{$i} ) !important }
+	.pr-column-#{$i} { padding-right: calc( var(--column-width) * #{$i} ) !important }
+	.px-column-#{$i} { padding-left: calc( var(--column-width) * #{$i} ) !important; padding-right: calc( var(--gutter-width) * #{$i} ) !important }
+
+}
+
+@include breakpoint-sm { 
+	@for $i from 0 through $num { 
+
+		.p-sm-column-#{$i} { padding: calc( var(--column-width) * #{$i} ) !important }
+		.pt-sm-column-#{$i} { padding-top: calc( var(--column-width) * #{$i} ) !important }
+		.pb-sm-column-#{$i} { padding-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.py-sm-column-#{$i} { padding-top: calc( var(--column-width) * #{$i} ) !important; padding-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.pl-sm-column-#{$i} { padding-left: calc( var(--column-width) * #{$i} ) !important }
+		.pr-sm-column-#{$i} { padding-right: calc( var(--column-width) * #{$i} ) !important }
+		.px-sm-column-#{$i} { padding-left: calc( var(--column-width) * #{$i} ) !important; padding-right: calc( var(--column-width) * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-md { 
+	@for $i from 0 through $num { 
+
+		.p-md-column-#{$i} { padding: calc( var(--column-width) * #{$i} ) !important }
+		.pt-md-column-#{$i} { padding-top: calc( var(--column-width) * #{$i} ) !important }
+		.pb-md-column-#{$i} { padding-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.py-md-column-#{$i} { padding-top: calc( var(--column-width) * #{$i} ) !important; padding-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.pl-md-column-#{$i} { padding-left: calc( var(--column-width) * #{$i} ) !important }
+		.pr-md-column-#{$i} { padding-right: calc( var(--column-width) * #{$i} ) !important }
+		.px-md-column-#{$i} { padding-left: calc( var(--column-width) * #{$i} ) !important; padding-right: calc( var(--column-width) * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-lg { 
+	@for $i from 0 through $num { 
+
+		.p-lg-column-#{$i} { padding: calc( var(--column-width) * #{$i} ) !important }
+		.pt-lg-column-#{$i} { padding-top: calc( var(--column-width) * #{$i} ) !important }
+		.pb-lg-column-#{$i} { padding-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.py-lg-column-#{$i} { padding-top: calc( var(--column-width) * #{$i} ) !important; padding-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.pl-lg-column-#{$i} { padding-left: calc( var(--column-width) * #{$i} ) !important }
+		.pr-lg-column-#{$i} { padding-right: calc( var(--column-width) * #{$i} ) !important }
+		.px-lg-column-#{$i} { padding-left: calc( var(--column-width) * #{$i} ) !important; padding-right: calc( var(--column-width) * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-xl { 
+	@for $i from 0 through $num { 
+
+		.p-xl-column-#{$i} { padding: calc( var(--column-width) * #{$i} ) !important }
+		.pt-xl-column-#{$i} { padding-top: calc( var(--column-width) * #{$i} ) !important }
+		.pb-xl-column-#{$i} { padding-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.py-xl-column-#{$i} { padding-top: calc( var(--column-width) * #{$i} ) !important; padding-bottom: calc( var(--column-width) * #{$i} ) !important }
+		.pl-xl-column-#{$i} { padding-left: calc( var(--column-width) * #{$i} ) !important }
+		.pr-xl-column-#{$i} { padding-right: calc( var(--column-width) * #{$i} ) !important }
+		.px-xl-column-#{$i} { padding-left: calc( var(--column-width) * #{$i} ) !important; padding-right: calc( var(--column-width) * #{$i} ) !important }
+
+	}
+}

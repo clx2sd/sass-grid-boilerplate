@@ -1,0 +1,45 @@
+/*
+ *	Create Margin Mixins
+ * 
+ *  Usage: @include mt(10) / @include mt-sm(10)  // Multiple of $spacer
+ * 
+ */
+@mixin m($value) { margin: calc( #{$spacer} * #{$value} ) !important } 
+@mixin mt($value) { margin-top: calc( #{$spacer} * #{$value} ) !important }
+@mixin mb($value) { margin-bottom: calc( #{$spacer} * #{$value} ) !important }
+@mixin my($value) { margin-top: calc( #{$spacer} * #{$value} ) !important; margin-bottom: calc( #{$spacer} * #{$value} ) !important }
+@mixin ml($value) { margin-left: calc( #{$spacer} * #{$value} ) !important }
+@mixin mr($value) { margin-right: calc( #{$spacer} * #{$value} ) !important }
+@mixin mx($value) { margin-left: calc( #{$spacer} * #{$value} ) !important; margin-right: calc( #{$spacer} * #{$value} ) !important }
+
+@mixin m-sm($value) { @include breakpoint-sm { margin: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mt-sm($value) { @include breakpoint-sm { margin-top: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mb-sm($value) { @include breakpoint-sm { margin-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin my-sm($value) { @include breakpoint-sm { margin-top: calc( #{$spacer} * #{$value} ) !important; margin-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin ml-sm($value) { @include breakpoint-sm { margin-left: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mr-sm($value) { @include breakpoint-sm { margin-right: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mx-sm($value) { @include breakpoint-sm { margin-left: calc( #{$spacer} * #{$value} ) !important; margin-right: calc( #{$spacer} * #{$value} ) !important } }
+
+@mixin m-md($value) { @include breakpoint-md { margin: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mt-md($value) { @include breakpoint-md { margin-top: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mb-md($value) { @include breakpoint-md { margin-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin my-md($value) { @include breakpoint-md { margin-top: calc( #{$spacer} * #{$value} ) !important; margin-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin ml-md($value) { @include breakpoint-md { margin-left: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mr-md($value) { @include breakpoint-md { margin-right: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mx-md($value) { @include breakpoint-md { margin-left: calc( #{$spacer} * #{$value} ) !important; margin-right: calc( #{$spacer} * #{$value} ) !important } }
+
+@mixin m-lg($value) { @include breakpoint-lg { margin: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mt-lg($value) { @include breakpoint-lg { margin-top: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mb-lg($value) { @include breakpoint-lg { margin-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin my-lg($value) { @include breakpoint-lg { margin-top: calc( #{$spacer} * #{$value} ) !important; margin-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin ml-lg($value) { @include breakpoint-lg { margin-left: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mr-lg($value) { @include breakpoint-lg { margin-right: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mx-lg($value) { @include breakpoint-lg { margin-left: calc( #{$spacer} * #{$value} ) !important; margin-right: calc( #{$spacer} * #{$value} ) !important } }
+
+@mixin m-xl($value) { @include breakpoint-xl { margin: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mt-xl($value) { @include breakpoint-xl { margin-top: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mb-xl($value) { @include breakpoint-xl { margin-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin my-xl($value) { @include breakpoint-xl { margin-top: calc( #{$spacer} * #{$value} ) !important; margin-bottom: calc( #{$spacer} * #{$value} ) !important } }
+@mixin ml-xl($value) { @include breakpoint-xl { margin-left: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mr-xl($value) { @include breakpoint-xl { margin-right: calc( #{$spacer} * #{$value} ) !important } }
+@mixin mx-xl($value) { @include breakpoint-xl { margin-left: calc( #{$spacer} * #{$value} ) !important; margin-right: calc( #{$spacer} * #{$value} ) !important } }

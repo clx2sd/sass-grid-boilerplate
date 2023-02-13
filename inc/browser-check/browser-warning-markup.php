@@ -1,0 +1,2 @@
+<div id="update-browser"><p class="browserupgrade"><img src="ico/warning.png" alt="Outdated Browser Warning"><br><br>You are using an <strong>outdated</strong> browser.<br><br>Please <a href="http://browsehappy.com/">upgrade your browser</a> to view this website.</p>
+</div>

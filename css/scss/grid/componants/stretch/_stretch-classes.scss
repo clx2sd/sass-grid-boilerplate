@@ -1,0 +1,34 @@
+$num: 6; // Number of classes to generate
+
+@for $i from 0 through $num { 
+	.stretch-right-#{$i} { width: calc( 100% + ( var(--column-width) * #{$i} ) - var(--gutter-width) * (#{$i} / 10) + ( var(--gutter-width) / 8 ) ) } 
+	.stretch-left-#{$i} { width: calc( 100% + ( var(--column-width) * #{$i} ) - var(--gutter-width) * (#{$i} / 10) + ( var(--gutter-width) / 8 ) ); float: right; } 
+}
+
+@include breakpoint-sm { 
+	@for $i from 0 through $num { 
+		.stretch-right-sm-#{$i} { width: calc( 100% + ( var(--column-width) * #{$i} ) - var(--gutter-width) * (#{$i} / 10) + ( var(--gutter-width) / 8 ) ) } 
+		.stretch-left-sm-#{$i} { width: calc( 100% + ( var(--column-width) * #{$i} ) - var(--gutter-width) * (#{$i} / 10) + ( var(--gutter-width) / 8 ) ); float: right; } 
+	}
+}
+
+@include breakpoint-md { 
+	@for $i from 0 through $num { 
+		.stretch-right-md-#{$i} { width: calc( 100% + ( var(--column-width) * #{$i} ) - var(--gutter-width) * (#{$i} / 10) + ( var(--gutter-width) / 8 ) ) } 
+		.stretch-left-md-#{$i} { width: calc( 100% + ( var(--column-width) * #{$i} ) - var(--gutter-width) * (#{$i} / 10) + ( var(--gutter-width) / 8 ) ); float: right; } 
+	}
+}
+
+@include breakpoint-lg { 
+	@for $i from 0 through $num { 
+		.stretch-right-lg-#{$i} { width: calc( 100% + ( var(--column-width) * #{$i} ) - var(--gutter-width) * (#{$i} / 10) + ( var(--gutter-width) / 8 ) ) } 
+		.stretch-left-lg-#{$i} { width: calc( 100% + ( var(--column-width) * #{$i} ) - var(--gutter-width) * (#{$i} / 10) + ( var(--gutter-width) / 8 ) ); float: right; } 
+	}
+}
+
+@include breakpoint-xl { 
+	@for $i from 0 through $num { 
+		.stretch-right-xl-#{$i} { width: calc( 100% + ( var(--column-width) * #{$i} ) - var(--gutter-width) * (#{$i} / 10) + ( var(--gutter-width) / 8 ) ) } 
+		.stretch-left-xl-#{$i} { width: calc( 100% + ( var(--column-width) * #{$i} ) - var(--gutter-width) * (#{$i} / 10) + ( var(--gutter-width) / 8 ) ); float: right; } 
+	}
+}

@@ -1,0 +1,28 @@
+/*
+ *	Create z-index Classes 
+ */
+
+$num: 6; // Number of classes to generate 
+
+@for $i from 0 through $num { .z-#{$i} { z-index: #{$i} } }
+
+@include breakpoint-sm { 
+	@for $i from 0 through $num {
+		.z-sm-#{$i} { z-index: #{$i} } 
+	}
+}
+@include breakpoint-md { 
+	@for $i from 0 through $num {
+		.z-md-#{$i} { z-index: #{$i} } 
+	}
+}
+@include breakpoint-lg { 
+	@for $i from 0 through $num {
+		.z-lg-#{$i} { z-index: #{$i} } 
+	}
+}
+@include breakpoint-xl { 
+	@for $i from 0 through $num {
+		.z-xl-#{$i} { z-index: #{$i} } 
+	}
+}

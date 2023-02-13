@@ -1,0 +1,66 @@
+$num: 6; // Number of classes to generate 
+
+@for $i from 0 through $num { 
+
+	.m-#{$i} { margin: calc( #{$spacer} * #{$i} ) !important }
+	.mt-#{$i} { margin-top: calc( #{$spacer} * #{$i} ) !important }
+	.mb-#{$i} { margin-bottom: calc( #{$spacer} * #{$i} ) !important }
+	.my-#{$i} { margin-top: calc( #{$spacer} * #{$i} ) !important; margin-bottom: calc( #{$spacer} * #{$i} ) !important }
+	.ml-#{$i} { margin-left: calc( #{$spacer} * #{$i} ) !important }
+	.mr-#{$i} { margin-right: calc( #{$spacer} * #{$i} ) !important }
+	.mx-#{$i} { margin-left: calc( #{$spacer} * #{$i} ) !important; margin-right: calc( #{$spacer} * #{$i} ) !important }
+
+}
+
+@include breakpoint-sm { 
+	@for $i from 0 through $num { 
+
+		.m-sm-#{$i} { margin: calc( #{$spacer} * #{$i} ) !important }
+		.mt-sm-#{$i} { margin-top: calc( #{$spacer} * #{$i} ) !important }
+		.mb-sm-#{$i} { margin-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.my-sm-#{$i} { margin-top: calc( #{$spacer} * #{$i} ) !important; margin-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.ml-sm-#{$i} { margin-left: calc( #{$spacer} * #{$i} ) !important }
+		.mr-sm-#{$i} { margin-right: calc( #{$spacer} * #{$i} ) !important }
+		.mx-sm-#{$i} { margin-left: calc( #{$spacer} * #{$i} ) !important; margin-right: calc( #{$spacer} * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-md { 
+	@for $i from 0 through $num { 
+
+		.m-md-#{$i} { margin: calc( #{$spacer} * #{$i} ) !important }
+		.mt-md-#{$i} { margin-top: calc( #{$spacer} * #{$i} ) !important }
+		.mb-md-#{$i} { margin-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.my-md-#{$i} { margin-top: calc( #{$spacer} * #{$i} ) !important; margin-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.ml-md-#{$i} { margin-left: calc( #{$spacer} * #{$i} ) !important }
+		.mr-md-#{$i} { margin-right: calc( #{$spacer} * #{$i} ) !important }
+		.mx-md-#{$i} { margin-left: calc( #{$spacer} * #{$i} ) !important; margin-right: calc( #{$spacer} * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-lg { 
+	@for $i from 0 through $num { 
+
+		.m-lg-#{$i} { margin: calc( #{$spacer} * #{$i} ) !important }
+		.mt-lg-#{$i} { margin-top: calc( #{$spacer} * #{$i} ) !important }
+		.mb-lg-#{$i} { margin-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.my-lg-#{$i} { margin-top: calc( #{$spacer} * #{$i} ) !important; margin-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.ml-lg-#{$i} { margin-left: calc( #{$spacer} * #{$i} ) !important }
+		.mr-lg-#{$i} { margin-right: calc( #{$spacer} * #{$i} ) !important }
+		.mx-lg-#{$i} { margin-left: calc( #{$spacer} * #{$i} ) !important; margin-right: calc( #{$spacer} * #{$i} ) !important }
+
+	}
+}
+@include breakpoint-xl { 
+	@for $i from 0 through $num { 
+
+		.m-xl-#{$i} { margin: calc( #{$spacer} * #{$i} ) !important }
+		.mt-xl-#{$i} { margin-top: calc( #{$spacer} * #{$i} ) !important }
+		.mb-xl-#{$i} { margin-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.my-xl-#{$i} { margin-top: calc( #{$spacer} * #{$i} ) !important; margin-bottom: calc( #{$spacer} * #{$i} ) !important }
+		.ml-xl-#{$i} { margin-left: calc( #{$spacer} * #{$i} ) !important }
+		.mr-xl-#{$i} { margin-right: calc( #{$spacer} * #{$i} ) !important }
+		.mx-xl-#{$i} { margin-left: calc( #{$spacer} * #{$i} ) !important; margin-right: calc( #{$spacer} * #{$i} ) !important }
+
+	}
+}

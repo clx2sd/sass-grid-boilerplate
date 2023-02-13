@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
+$bodyBackground: #f1f1f1;
+$elemBackground: #f9f9f9;
+$border: #888;
+
+body {
+	background: $bodyBackground;
+
+	* {
+		font-family: 'Ubuntu', sans-serif;
+		color: #444;
+	}
+
+	h1, h2, h3 {
+		font-weight: 500;
+		line-height: 1.15;
+	}
+
+	h1 { font-size: 40px }
+	h2 { font-size: 30px }
+	h3 { font-size: 20px }
+
+	.top-border { border-top: 1px solid $border }
+	.bottom-border { border-bottom: 1px solid $border }
+
+	p {
+		margin-bottom: var(--gutter-width);
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	strong { font-weight: 500 }
+
+	.visible {
+		> div {
+			padding: 8px 0;
+			border-radius: 4px;
+			background: $elemBackground;
+			border: 1px solid $border;			
+			&:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+		}
+
+		p {
+			padding: 0 16px;
+			font-size: 14px;
+		}
+	}
+	.dotted { border: 2px dotted $border; border-radius: 4px }
+	.dashed { border: 2px dashed $border; border-radius: 4px }
+
+	.single-column-reference {
+		display: block;
+		position: relative;
+		height: 40px;
+		width: var(--column-width);
+		background: #ccc;
+	}
+
+}

@@ -1,0 +1,37 @@
+/*
+ *	Import Additional Componants 
+ */
+
+ // Breakpoint Label
+@import 'componants/breakpoint-label';
+
+// Adds margin + padding classes
+@import 'componants/spacing';
+
+// Adds item ordering classes
+@import 'componants/ordering';		
+
+// Adds per breakpoint text alignment
+@import 'componants/text-align';
+
+// Height Classes
+@import 'componants/heights';
+
+// Adds Show / Hide per breakpoint classes
+@import 'componants/showhide';
+
+// Adds z-index per breakpoint classes
+@import 'componants/z-index';
+
+// Adds vertical alignment classes
+// *Do not use these on col- or .container, only on a nested item or div
+@import 'componants/vertical-align';
+
+// Adds shift classes to vertically offset up or down ( based on --var(column width) ) 
+@import 'componants/shift';
+
+// Adds stretch classes to force overflow on content within columns ( based on --var(column width) ) 
+@import 'componants/stretch';
+
+// Flush
+@import 'componants/flush';

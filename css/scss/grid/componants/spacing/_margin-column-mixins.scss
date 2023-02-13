@@ -1,0 +1,42 @@
+/*
+ *	Create Margin Mixins ( For Column )
+ */
+@mixin m-column($value) { margin: calc( var(--column-width) * #{$value} ) !important }
+@mixin mt-column($value) { margin-top: calc( var(--column-width) * #{$value} ) !important }
+@mixin mb-column($value) { margin-bottom: calc( var(--column-width) * #{$value} ) !important }
+@mixin my-column($value) { margin-top: calc( var(--column-width) * #{$value} ) !important; margin-bottom: calc( var(--column-width) * #{$value} ) !important }
+@mixin ml-column($value) { margin-left: calc( var(--column-width) * #{$value} ) !important }
+@mixin mr-column($value) { margin-right: calc( var(--column-width) * #{$value} ) !important }
+@mixin mx-column($value) { margin-left: calc( var(--column-width) * #{$value} ) !important; margin-right: calc( var(--column-width) * #{$value} ) !important }
+
+@mixin m-sm-column($value) { @include breakpoint-sm { margin: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mt-sm-column($value) { @include breakpoint-sm { margin-top: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mb-sm-column($value) { @include breakpoint-sm { margin-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin my-sm-column($value) { @include breakpoint-sm { margin-top: calc( var(--column-width) * #{$value} ) !important; margin-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin ml-sm-column($value) { @include breakpoint-sm { margin-left: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mr-sm-column($value) { @include breakpoint-sm { margin-right: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mx-sm-column($value) { @include breakpoint-sm { margin-left: calc( var(--column-width) * #{$value} ) !important; margin-right: calc( var(--column-width) * #{$value} ) !important } }
+
+@mixin m-md-column($value) { @include breakpoint-md { margin: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mt-md-column($value) { @include breakpoint-md { margin-top: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mb-md-column($value) { @include breakpoint-md { margin-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin my-md-column($value) { @include breakpoint-md { margin-top: calc( var(--column-width) * #{$value} ) !important; margin-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin ml-md-column($value) { @include breakpoint-md { margin-left: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mr-md-column($value) { @include breakpoint-md { margin-right: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mx-md-column($value) { @include breakpoint-md { margin-left: calc( var(--column-width) * #{$value} ) !important; margin-right: calc( var(--column-width) * #{$value} ) !important } }
+
+@mixin m-lg-column($value) { @include breakpoint-lg { margin: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mt-lg-column($value) { @include breakpoint-lg { margin-top: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mb-lg-column($value) { @include breakpoint-lg { margin-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin my-lg-column($value) { @include breakpoint-lg { margin-top: calc( var(--column-width) * #{$value} ) !important; margin-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin ml-lg-column($value) { @include breakpoint-lg { margin-left: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mr-lg-column($value) { @include breakpoint-lg { margin-right: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mx-lg-column($value) { @include breakpoint-lg { margin-left: calc( var(--column-width) * #{$value} ) !important; margin-right: calc( var(--column-width) * #{$value} ) !important } }
+
+@mixin m-xl-column($value) { @include breakpoint-xl { margin: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mt-xl-column($value) { @include breakpoint-xl { margin-top: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mb-xl-column($value) { @include breakpoint-xl { margin-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin my-xl-column($value) { @include breakpoint-xl { margin-top: calc( var(--column-width) * #{$value} ) !important; margin-bottom: calc( var(--column-width) * #{$value} ) !important } }
+@mixin ml-xl-column($value) { @include breakpoint-xl { margin-left: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mr-xl-column($value) { @include breakpoint-xl { margin-right: calc( var(--column-width) * #{$value} ) !important } }
+@mixin mx-xl-column($value) { @include breakpoint-xl { margin-left: calc( var(--column-width) * #{$value} ) !important; margin-right: calc( var(--column-width) * #{$value} ) !important } }
