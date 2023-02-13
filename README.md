@@ -1,6 +1,6 @@
 
 <h1 align="center">
-SCSS Grid Boilerplate
+SCSS/jQuery Grid Boilerplate
 </h1>
 
 <h4 align="center">An SCSS starter project boilerplate with device detection, advanced in-built grid system and various other features.</h4>
@@ -15,6 +15,7 @@ SCSS Grid Boilerplate
 
 
 ## Meta Features
+
 * Open Graph Meta tags integration ( https://www.webfx.com/blog/social-media/open-graph-meta-tags/ ) - define and include titles/keywords/description and thumbnail images when sharing the website across social media platforms.
 * Full set of icons for mobile/tablet device support - 'save to home', 'bookmark', 'add shortcut' etc across android and iOS platforms.
 * Browser config & meta theme color.
@@ -29,3 +30,12 @@ SCSS Grid Boilerplate
 * Minified integration of Reset.css ( https://meyerweb.com/eric/tools/css/reset/ ).
 * Global stylesheet includes cross-browser scrollbar styling, enable/disable text selection, force appearance: none; on form fields and selects for cross-browser styling, and force box-sizing.
 
+
+## JS Features
+
+* Prebuilt scripts and integrated libraries include jQuery, Tween.js, Slick Carousel.
+* Preset quality of life / scroll functions such as detecting an element in view, assinging a class when the user has scrolled and so on.
+* Stripped Underscore.js function throttler.
+* RAF Polyfill.
+* Animated scroll-to functionality.
+* Carousel preset.
