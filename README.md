@@ -1,9 +1,9 @@
 
-<h1 align="center">
+<h1>
 SCSS/jQuery Grid Boilerplate
 </h1>
 
-<h4 align="center">An SCSS starter project boilerplate with device detection, advanced in-built grid system and various other features.</h4>
+<h4>An SCSS starter project boilerplate with device detection, advanced in-built grid system and various other features.</h4>
 
 ## Key Features
 
